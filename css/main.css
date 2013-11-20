@@ -1,0 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Russo+One|Open+Sans&subset=latin,cyrillic);
+.rootcontainer {
+	width: 900px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -450px;
+	padding-bottom: 40px;
+}
+.maincontainer {
+	font-size: 0px;
+}
+.mainitem {
+	display: inline-block;
+	vertical-align: top;
+	width: 420px;
+	min-height: 400px;
+	font-family: 'Open Sans', sans-serif;
+}
+.mainitem a {
+	text-decoration: none;
+	color: black;
+}
+.mainitem sup {
+	color: red;
+	margin-right: 10px;
+}
+.mainleft {
+	text-align: left;
+	border-right: 1px solid #eeeeee;
+	padding-right: 20px;
+	font-size: 16px;
+}
+.mainchat {
+	min-height: 400px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	padding-right: 20px;
+	font-size: 16px;
+}
+.mainright {
+	text-align: right;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.mainitem .mainp {
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.mainchat p {
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 5px;
+}
+.mainchat input {
+	width: 100%;
+	border: 0px solid black;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+}
+.mainitem input {
+	width: 100%;
+	border: 0px solid black;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+}
+.mainright input {
+	text-align: right;
+}
+.headercontainer {
+	padding-top: 20px;
+	font-family: 'Russo One', sans-serif;
+}
+.headeritem {
+	display: inline-block;
+	vertical-align: bottom;
+	height: 100px;
+}
+.headerleft {
+	width: 292px;
+	font-size: 40px;
+	text-align: left;
+	line-height: 80px;
+}
+.headercenter {
+	width: 292px;
+	color: red;
+	text-align: center;
+	font-size: 60px;
+	line-height: 65px;
+}
+.headerright {
+	width: 292px;
+	font-size: 40px;
+	text-align: right;
+	line-height: 80px;
+}
+.clickable {
+	cursor: pointer;
+}
+.footercontainer {
+	font-family: 'Open Sans', sans-serif;
+}
+.chatheader {
+	padding-top: 10px;
+	font-family: 'Russo One', sans-serif;
+	color: red;
+	font-size: 40px;
+	line-height: 55px;
+}
+.backtolist {
+	text-align: left;
+	font-size: 40px;
+	padding-bottom: 10px;
+}
+.backtolist a {
+	text-decoration: none;
+	color: black;
+}
+.totop {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 6px;
+	background: url("/img/icons.png") 38px 16px;
+	height: 16px;
+	width: 16px;
+}
+.todel {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 6px;
+	background: url("/img/icons.png") 16px 16px;
+	height: 16px;
+	width: 16px;
+}
+.toapp {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 6px;
+	background: url("/img/icons.png") 0 16px;
+	height: 16px;
+	width: 16px;
+}
+.totop:hover {
+	background: url("/img/icons.png") 38px 0px;
+}
+.todel:hover {
+	background: url("/img/icons.png") 16px 0px;
+}
+.toapp:hover {
+	background: url("/img/icons.png") 0px 0px;
+}

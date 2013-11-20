@@ -1,0 +1,11 @@
+<div class="mainchat">
+	<div class="chatheader">{{ chatHeader }}</div>
+	<div class="chatcontent">
+		<div class="backtolist"><a href="#/list">⇦</a></div>
+		<p ng-repeat="(mk, mv) in messages">
+			{{ mv }}
+			<span class="clickable" ng-show="isUser" ng-click="deleteChat(mk)">[x]</span>
+		</p>
+		<input type="text" placeholder="Ваш ответ" ng-model="chatValue" ng-keyup="addChat($event)" maxlength="140"/>
+	</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="mainitem mainleft">
+	<div class="mainp" ng-repeat="l in left">
+		<a href="#/list/{{ l.$id }}">{{ l.$val }}</a>
+		<sup>{{ chatNum[l.$id] }}</sup>
+		<div class="clickable totop" ng-show="isUser" ng-click="topLeft(l.$id)"></div>
+		<div class="clickable todel" ng-show="isUser" ng-click="deleteLeft(l.$id)"></div>
+	</div>
+	<div class="mainp" ng-repeat="(lk, lv) in templeft">
+		<a href="#/list/{{ lk }}">{{ lv }}</a>
+		<sup>{{ chatNum[lk] }}</sup>
+		<div class="clickable toapp" ng-show="isUser" ng-click="addTempLeft(lk, lv)"></div>
+		<div class="clickable todel" ng-show="isUser" ng-click="deleteTempLeft(lk)"></div>
+	</div>
+	<input type="text" placeholder="Добавить За" ng-model="leftValue" ng-keyup="addLeft($event)" maxlength="140"/>
+</div>
+<div class="mainitem mainright">
+	<div class="mainp" ng-repeat="r in right">
+		<a href="#/list/{{ r.$id }}">{{ r.$val }}</a>
+		<sup>{{ chatNum[r.$id] }}</sup>
+		<div class="clickable totop" ng-show="isUser" ng-click="topRight(r.$id)"></div>
+		<div class="clickable todel" ng-show="isUser" ng-click="deleteRight(r.$id)"></div>
+	</div>
+	<div class="mainp" ng-repeat="(rk, rv) in tempright">
+		<a href="#/list/{{ rk }}">{{ rv }}</a>
+		<sup>{{ chatNum[rk] }}</sup>
+		<div class="clickable toapp" ng-show="isUser" ng-click="addTempRight(rk, rv)"></div>
+		<div class="clickable todel" ng-show="isUser" ng-click="deleteTempRight(rk)"></div>
+	</div>
+	<input type="text" placeholder="Добавить Против" ng-model="rightValue" ng-keyup="addRight($event)" maxlength="140"/>
+</div>
