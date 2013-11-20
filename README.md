@@ -15,6 +15,7 @@ INSTALL
 6. Go to "Forge" -> "Security"; Create some rules (do not forget to replace myuser1 and myuser2 with your github usernames):
 ```
 {
+
   "rules": {
     ".read": true,
     "approved": {
@@ -52,4 +53,5 @@ INSTALL
 8. Check application works.
 
 Main url: http://your.domain
+
 Admin url: http://your.domain/secret.index.html (auth link in footer)
